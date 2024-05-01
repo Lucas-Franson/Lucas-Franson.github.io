@@ -53,12 +53,13 @@ section {
     margin: 2vw;
     width: 100%;
     font-size: 1.5em;
-    background-color: #00E0A8;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    border-radius: 4px;
 }
 
-.table-content thead {
-    border: 1px solid #000;   
+.table-content thead {  
     color: white;
+    background-color: #00E0A8;
 }
 
 .table-content th {
@@ -76,7 +77,6 @@ section {
 
 .table-content tr {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid #000;
 }
 
 .table-content tr td {
@@ -85,7 +85,7 @@ section {
 
 .table-content tbody tr {
     transition: background-color 0.3s;
-    background-color: #1FFFC7;
+    background-color: #D6FFF5;
 }
 
 .table-content tbody tr:hover {
