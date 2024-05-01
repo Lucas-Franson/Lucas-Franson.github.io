@@ -18,8 +18,13 @@ p {
     font-size: 1.2em;
 }
 
+p::first-letter {
+    font-size: 1.5em;
+}
+
 #content {
     background-color: #aaa;
+    padding: 20px;
 }
 
 body {
@@ -34,4 +39,26 @@ body {
 .checker {
     width: 15vw;
     height: auto;
+}
+
+div.favorite-movies a {
+    text-decoration: none;
+}
+
+div.favorite-movies a:hover {
+    text-decoration: underline;
+}
+
+div.favorite-movies ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.movies-order {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.movies-order li {
+    flex: 0 0 auto;
 }
