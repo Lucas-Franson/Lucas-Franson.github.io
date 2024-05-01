@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0A1128;
+}
+
+.container {
+    position: relative;
+    margin: 0 12vw;
+    background-color: white;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    margin: 1vw;
+    padding: 3vh;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.cart-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.cart-icon:hover {
+    cursor: pointer;
+}
+
+.logout {
+    width: 2vw;
+    height: 2vw;
+    transition: background-color 0.3s;
+}
+
+.logout:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.table-content {
+    margin: 2vw;
+    width: 100%;
+    font-size: 1.5em;
+    background-color: #00E0A8;
+}
+
+.table-content thead {
+    border: 1px solid #000;   
+    color: white;
+}
+
+.table-content th {
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.table-content .column-number {
+    text-align: right;
+}
+
+.table-content .currency::before {
+    content: "$";
+}
+
+.table-content tr {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #000;
+}
+
+.table-content tr td {
+    padding: 10px;
+}
+
+.table-content tbody tr {
+    transition: background-color 0.3s;
+    background-color: #1FFFC7;
+}
+
+.table-content tbody tr:hover {
+    background-color: #99FFE6;
+}
+
+.action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shopping-cart-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.shopping-cart-actions .place-order {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #44FFD1;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.shopping-cart-actions .place-order:hover {
+    cursor: pointer;
+    background-color: #00E0A8;
+}
+
+.table-content .action input {
+    text-align: center;
+    width: 50%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}

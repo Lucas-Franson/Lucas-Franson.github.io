@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div>
+                <img src="static/logo.png" class="logo" alt="Tesla Logo">
+            </div>
+    
+            <div>
+                <h1>Welcome, Lucas</h1>
+            </div>
+    
+            <div>
+                <img src="static/logout.webp" class="logout" alt="logout">
+            </div>
+        </header>
+    
+        <hr>
+    
+        <section>
+            <div class="products-list">
+                <h2>Product List</h2>
+                <table class="table-content">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Node.js</td>
+                            <td class="column-number currency">9.99</td>
+                            <td class="column-number">8</td>
+                            <td class="action">
+                                <button>
+                                    <img src="static/cart-icon.png" class="cart-icon" alt="add to cart">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>React</td>
+                            <td class="column-number currency">19.99</td>
+                            <td class="column-number">5</td>
+                            <td class="action">
+                                <button>
+                                    <img src="static/cart-icon.png" class="cart-icon" alt="add to cart">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Angular</td>
+                            <td class="column-number currency">29.99</td>
+                            <td class="column-number">13</td>
+                            <td class="action">
+                                <button>
+                                    <img src="static/cart-icon.png" class="cart-icon" alt="add to cart">
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="shopping-cart">
+                <h2>Shopping Cart</h2>
+                <div class="shopping-table">
+                    <table class="table-content">
+                        <thead>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Quantity</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Node.js</td>
+                                <td class="column-number currency">9.99</td>
+                                <td class="column-number currency">9.99</td>
+                                <td class="action">
+                                    <input type="number" value="1" min="1" max="10">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Angular</td>
+                                <td class="column-number currency">29.99</td>
+                                <td class="column-number currency">290.99</td>
+                                <td class="action">
+                                    <input type="number" value="1" min="1" max="10">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column-number" colspan="4">
+                                    Total: 300.98
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="shopping-cart-actions">
+                    <button class="place-order">Place Order</button>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+    
+        </footer>
+    </div>
+
+</body>
+</html>
