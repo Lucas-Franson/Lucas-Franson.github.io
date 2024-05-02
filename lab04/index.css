@@ -1,0 +1,131 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #a2cbbc;
+}
+
+header div {
+    margin: 10px 20px;
+}
+
+header .select-actions {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    padding: 1vw;
+    background-color: transparent;
+    font-size: 1vw;
+    font-weight: 400;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 1vw;
+    width: 8vw;
+}
+
+section select {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+}
+
+header .select-actions:hover {
+    cursor: pointer;
+}
+
+section {
+    border: 1px solid #a2cbbc;
+}
+
+section form h3 {
+    text-decoration: underline;
+}
+
+section form .form-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+section form .form-content input,
+section form .form-content select,
+section form .form-content textarea{
+    padding: 10px;
+    width: 16vw;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+section form .form-content input[type="checkbox"] {
+    width: 2vw;
+}
+
+section form .form-content select:hover {
+    cursor: pointer;
+}
+
+section form .input-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+section form .input-form .paymentMode {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 16vw;
+}
+
+section form .input-form .paymentMode label:hover {
+    cursor: pointer;
+}
+
+section form .form-reg-right,
+section form .form-reg-left {
+    width: 100%;
+    padding: 10px;
+}
+
+section form .form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+}
+
+section form .form-actions button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #a2cbbc;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+section form .form-actions button:hover {
+    cursor: pointer;
+    background-color: #5f8175;
+}
+
+section form label {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+label.required::after {
+    content: " *";
+    color: red;
+}
