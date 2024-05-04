@@ -36,11 +36,11 @@ const students = [
 function average(arr) {
     return arr
         .filter(x => x.courses.includes('cs303'))
-        .map(x => {
-            let std = {};
-            std[x.name] = x.grades.reduce((acc, cur) => acc + cur, 0) / x.grades.length;
-            return std;
-        });
+        .reduce(
+            (acc, cur) => {
+                acc[cur.name] = cur.grades.reduce((acc, cur) => acc + cur, 0) / cur.grades.length;
+                return acc;
+            }, {});
 }
 
 console.log(average(students));
