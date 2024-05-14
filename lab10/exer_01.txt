@@ -1,0 +1,8 @@
+1. How many callbacks queues in Node.js and what are they? Give examples to explain how different callbacks are 
+enqueued in different queues.
+
+    There are 7 queues, nextTick is the first queue to process then it goes to promise queue and then to timer
+queue (example, setTimeout) next go to I/O queue (example, filesystem) next go to polling queue that keeps the
+files before sending to I/O queue and then it goes to cheek queue using setImmediate finally it finishes in
+close queue when we use the files and it closes for example.
+
