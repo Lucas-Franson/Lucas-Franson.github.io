@@ -1,0 +1,29 @@
+GET http://localhost:3000/books
+
+###
+GET http://localhost:3000/books/2
+
+###
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby",
+  "ISBN": "978-3-16-148410-0",
+  "publishedDate": "1925-04-10",
+  "author": "F. Scott Fitzgerald"
+}
+
+###
+PUT http://localhost:3000/books/2
+Content-Type: application/json
+
+{
+  "title": "The Lord of the Rings",
+  "ISBN": "978-3-16-148410-0",
+  "publishedDate": "1900-01-01",
+  "author": "J.R.R. Tolkien"
+}
+
+###
+DELETE http://localhost:3000/books/3

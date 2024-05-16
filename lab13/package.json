@@ -1,0 +1,15 @@
+{
+  "name": "shoppingcart-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Lucas F Barros",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
